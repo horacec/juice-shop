@@ -37,6 +37,9 @@ jobs:
           npm install --ignore-scripts
           cd frontend
           npm install --ignore-scripts --legacy-peer-deps
+      - name: Frogbot by JFrog
+        uses: jfrog/frogbot@v2.20.2
+
       - name: "Lint source code"
         run: npm run lint
       - name: "Lint customization configs"
